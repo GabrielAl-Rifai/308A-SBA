@@ -41,6 +41,11 @@ function createSlideshow(images) {
     document.getElementById("slideshow").innerHTML = `
   <div class="slide" style="background-image: url('${images[0]}')"></div>
   <div class="slide" style="background-image: url('${images[1]}')"></div>
+  <div class="d-flex">
+    <button id="getFavouritesBtn" class="btn btn-success mx-auto mb-5">
+      Get Favorites
+    </button>
+  </div>
   `
   currentPosition += 2
   if (images.length == 2) currentPosition = 0
@@ -49,6 +54,12 @@ function createSlideshow(images) {
     document.getElementById("slideshow").innerHTML = `
   <div class="slide" style="background-image: url('${images[0]}')"></div>
   <div class="slide"></div>
+  <div class="d-flex">
+    <button id="getFavouritesBtn" class="btn btn-success mx-auto mb-5">
+      Get Favorites
+    </button>
+  </div>
+  
   `
   }
 
